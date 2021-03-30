@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飼養注意事項</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="newnote.css">
+ 
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+ 
+ 
+</head>
+<body>
+<!-- 導覽列 -->
+    <nav  class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container-fluid"> 
+            <div class="navbar-header"> 
+                <a class="navbar-brand" >
+                    <img src="logo.png" alt="Logo" style="width:40px;">
+                </a> 
+                    <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar"> 
+                        <span class="sr-only">導覽按鈕</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+            </div> 
+        
+            <div id="navbar" class="navbar-collapse collapse"> 
+                <ul class="nav navbar-nav navbar-right" style="font-size: 40px;">
+                   
+                    <li style="margin-left:30px;"><a href="login.html">首頁</a></li>
+                    <li><a href="#" style="margin-left: 30px;">收養資訊</a></li>
+                    <li class="active"><a href="#" style="margin-left: 30px;">飼養注意事項</a></li>
+                    <li><a href="shelter.html" style="margin-left: 30px;">收容所地圖</a></li>
+                    <li><a href="hospital.html" style="margin-left: 30px;">寵物醫院</a></li> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="margin-left: 30px;margin-right: 150px;">關於<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="donate.html">支持我們 </a></li>
+                            <li><a href="about.html">關於我們 </a></li>
+                        </ul>
+                    </li> 
+                 </ul> 
+            </div> 
+        </div> 
+     <div class="clear"></div>     
+
+    </nav>
+    <!-- 導覽列 -->
+    <div class="notice">
+        <p>飼養小祕方</p>
+    </div>
+
+<!-- 注意事項 -->
+<div class ="bigbox">
+    <div class="centerBox">
+
+    <div class = "arrange" style="background-color: #66B3FF;" >
+        <div class="image">
+            <img class = "box_notice" src="new1.jpg" alt=""></br>
+        </div>
+        <div class="word">
+            <p class="title">人不在家就把飼料裝滿任意吃到飽？</p>    
+            <p class="content">
+                <br>許多飼主擔心毛孩們會吃不飽，人不在家時就把飼料裝滿，任由毛孩吃到飽！<br>但毛孩過量飲食會造成肥胖問題，提升罹患糖尿病和心血管疾病的機率。體重過重也會影響關節承重壓力，增加關節疾病的風險。
+            </p>  
+        </div>
+    </div>
+    <div class = "arrange" style="background-color: #FFE66F;" >
+        <div class="image">
+            <img class = "box_notice" src="new2.jpg" alt=""></br>
+        </div>
+        <div class="word">
+            <p class="title">跟著人類進食，比飼料還好吃？</p>    
+            <p class="content">
+                <br>每當我們在吃東西時，毛孩在旁邊用渴望的眼神看你，主人就會心軟分食一些給牠們。<br>若跟著人類進食，食物太油太鹹，毛孩容易引發腎臟病及其他併發症。
+            </p> 
+        </div>     
+    </div>
+    <div class ="arrange" style="background-color:#FF5151">
+        <div class="image">
+            <img class = "box_notice" src="new3.jpg" alt=""></br>
+        </div>
+        <div class = "word">
+            <!-- <img class = "box_notice" src="dog1.jpg" alt=""></br> -->
+            <p class="title">把潔牙骨當零食，還有刷牙效果？</p>   
+            <p class="content">
+                <br>毛孩的牙齒保健是飼主最常忽視和偷懶的部分，飼主常用潔牙骨當零食，順便作為牙齒清潔，但潔牙骨的清潔效果有限，還是必須每天幫毛孩刷牙，不然長期有食物殘渣附著在牙齒上，容易產生牙菌斑，久了就會發生口腔疾病。      
+            </p>
+        </div>
+    </div>
+    <div class ="arrange" style="background-color: #FFE66F;">
+        <div class="image">
+            <img class = "box_notice" src="new4.jpg" alt=""></br>
+        </div>
+        <div class = "word">
+            <p class="title">清潔次數太頻繁，常洗澡才會乾淨？</p>
+            <p class="content">
+                <br>有些飼主喜歡頻繁地幫毛孩清潔，認為常洗澡才乾淨。毛孩的皮膚與人類構造完全不同，太常清潔反而會把牠們保護身體的油脂都沖洗掉。甚至有些飼主會使用人類的洗髮精或沐浴乳幫毛孩清洗，這會造成毛孩皮膚乾燥、老化和脫皮現象，嚴重還會引起皮膚病。    
+            </p>
+        </div>
+    </div>
+    <div class ="arrange" style="background-color:#FF5151">
+        <div class="image">
+            <img class = "box_notice" src="new5.jpg" alt=""></br>
+        </div>
+        <div class = "word">
+            <!-- <img class = "box_notice" src="dog1.jpg" alt=""></br> -->
+            <p class="title">喝牛奶就可以長得頭好壯壯？</p>   
+            <p class="content">
+                <br>除了部分的人有乳糖不耐症之外，大多數的毛孩也有乳糖不耐症，而且腸胃道中的乳糖酵素相較於人類少，無法完全消化牛奶中的乳糖。如果常給他們喝牛奶，容易造成嘔吐或腹瀉，輕則因為太常腹瀉而導致食慾不振，重則有可能引發腎臟疾病或急性腎衰竭。  
+            </p>
+        </div>
+    </div>
+    <div class = "arrange" style="background-color: #66B3FF;" >
+        <div class="image">
+            <img class = "box_notice" src="new6.jpg" alt=""></br>
+        </div>
+        <div class="word">
+            <p class="title">鮮食罐頭沒吃完，先冰起來之後再加熱食用？</p>    
+            <p class="content">
+                <br>鮮食罐頭類食物，開封後就應盡快讓毛孩食用完畢，以免變質。雖然放進冰箱能夠延長保存期限，但重複加熱後，不僅會導致營養流失，還可能產生毒性反應，反而有害健康。
+            </p>  
+        </div>
+    </div>
+    <div class ="arrange" style="background-color:#FF5151">
+        <div class="image">
+            <img class = "box_notice" src="new7.jpg" alt=""></br>
+        </div>
+        <div class = "word">
+            <!-- <img class = "box_notice" src="dog1.jpg" alt=""></br> -->
+            <p class="title">毛孩一家親，互吃對方飼料沒問題？</p>   
+            <p class="content">
+                <br>家中同時養貓又養狗的飼主常把貓狗的飼料交換吃，覺得飼料看起來都一樣應該沒關係。但貓狗的飼料在營養成分上大不相同，若狗狗吃貓糧，容易肥胖對腎臟負荷也會比較大；如果貓咪吃狗食，則會因為攝取熱量不足而營養不良，同時也會傷害內臟、皮膚和毛髮的健康。
+            </p>
+        </div>
+    </div>
+    <div class = "arrange" style="background-color: #66B3FF;" >
+        <div class="image">
+            <img class = "box_notice" src="new8.jpg" alt=""></br>
+        </div>
+        <div class="word">
+            <p class="title">毛孩看病太燒錢，寵物險救命也救荷包</p>    
+            <p class="content">
+                <br>毛孩和人一樣，難免會有大大小小的病痛意外發生，若不好好地改正錯誤的飼養習慣，一旦毛孩發生受傷意外或疾病，昂貴的醫療費用是不容小覷的。毛孩就像家人一般，平時該為毛孩的健康把關，並及早做好寵物險規劃，給毛孩一個安心又有保障的生長環境。
+            </p>  
+        </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+</div>
+
+
+
+<!-- 注意事項 -->
+  
+  
+    <!-- 頁尾 -->
+    <footer class="navbar-static-bottom" style="margin-top: 50px;">
+        <div class="contact" >
+           <p style="margin-top: 10px;">聯絡我們</p>
+           </br>
+           <p style="font-family:Comic Sans MS, Comic Sans, cursive;">mail：a1063301@mail.nuk.edu.tw</p>
+           </br>
+           <p style="font-family:Comic Sans MS, Comic Sans, cursive;">mail：a1063307@mail.nuk.edu.tw</p>
+        </div>
+        <div class="clear"></div>     
+
+     </footer>
+<!-- 頁尾 -->
+
+
+</body>
+
+</html>

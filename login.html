@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="login.css">
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+ 
+</head>
+<body>
+    <nav  class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container-fluid"> 
+            <div class="navbar-header"> 
+                <a class="navbar-brand" >
+                    <img src="logo.png" alt="Logo" style="width:60px;">
+                </a> 
+                    <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navbar"> 
+                        <span class="sr-only">導覽按鈕</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+            </div> 
+        
+            <div id="navbar" class="navbar-collapse collapse"> 
+                <ul class="nav navbar-nav navbar-right" style="font-size: 40px;">
+                   
+                    <li class="active" style="margin-left:30px;"><a href="#">首頁</a></li>
+                    <li><a href="animal.php" style="margin-left: 30px;">收養資訊</a></li>
+                    <li><a href="notice.php" style="margin-left: 30px;">飼養注意事項</a></li>
+                    <li><a href="shelter.php" style="margin-left: 30px;">收容所地圖</a></li>
+                    <li><a href="hospital.php" style="margin-left: 30px;">寵物醫院</a></li> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" style="margin-left: 30px;margin-right: 150px;">關於<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="donate.html">支持我們 </a></li>
+                            <li><a href="about.html">關於我們 </a></li>
+                        </ul>
+                    </li> 
+                </ul> 
+            </div> 
+        </div> 
+     <div class="clear"></div>     
+
+    </nav>
+   
+        
+     
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="width: 70%;margin:auto;margin-top: 70px;">  
+            <!-- 這邊輪播的圖片我把框變小，不然圖片會變形 -->
+            <!-- 輪播（Carousel）指標 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+        
+            <!-- 輪播（Carousel）專案 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="roll/09_resources_e005.jpg" style="width: 100%;height: 100%" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="roll/09_resources_e006.jpg" style="width: 100%;height: 100%" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="roll/53335_157920890916089_1464613_o.jpg" style="width: 100%;height: 100%" alt="Third slide">
+                </div>
+                <div class="item">
+                    <img src="roll/wuo_speech02.jpg" style="width: 100%;height: 100%" alt="Fourth slide">
+                </div>
+            </div>
+        
+            <!-- 輪播（Carousel）導航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <!-- 狗種介紹 -->
+        <div class="photo">
+            
+            <div class="container" style="text-align:center"> 
+                <div class="row" > 
+                    <div class="col-md-2" style="margin-top:15px;">
+                    
+                        <img src="dog1.jpg"  width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形"> 
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">柴犬</h1>
+                    
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/zh-tw/%E6%9F%B4%E7%8A%AC" role="button" style="margin-top: 10px;">了解更多</a> 
+                    </div>    
+                    </div> 
+                
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="dog2.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">博美犬</h1>
+                    
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E5%8D%9A%E7%BE%8E%E7%8A%AC" role="button" style="margin-top: 10px;">了解更多</a>
+                    </div> 
+                    </div>
+            
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                        
+                        <img src ="dog3.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">古代牧羊犬</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E5%9C%8B%E5%8F%A4%E4%BB%A3%E7%89%A7%E7%BE%8A%E7%8A%AC" role="button" style="margin-top: 10px;">了解更多</a>
+                    </div> 
+                        </div>
+
+                    <div class="col-md-2" style="margin-top: 15px;">
+                    
+                        <img src ="dog4.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                            <h1 class="text-center" style="margin-top: 10px;">黃金獵犬</h1>
+                            
+                            <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E9%87%91%E6%AF%9B%E5%AF%BB%E5%9B%9E%E7%8A%AC" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="dog5.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">狐狸犬</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E9%93%B6%E7%8B%90%E7%8A%AC" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                
+                        <img src ="dog6.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                            <h1 class="text-center" style="margin-top: 10px;">約克夏</h1>
+                            
+                            <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E7%B4%84%E5%85%8B%E5%A4%8F%E3%B9%B4" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                        <div class="clear"></div>
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="cat1.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">波斯貓</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E6%B3%A2%E6%96%AF%E8%B2%93" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="cat2.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">英國短毛貓</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/zh-tw/%E8%8B%B1%E5%9B%BD%E7%9F%AD%E6%AF%9B%E7%8C%AB" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="cat3.png" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">日本短尾貓</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E7%9F%AD%E5%B0%BE%E8%B2%93" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="cat4.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">新加坡貓</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/zh-tw/%E6%96%B0%E5%8A%A0%E5%9D%A1%E8%B2%93" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="cat5.jfif" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">美國短尾猫</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/zh-tw/%E7%9F%AD%E5%B0%BE%E8%B2%93" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-2" style=" margin-top: 15px;">
+                    
+                        <img src ="cat6.jpg" width="150px" height="150px" class="img-circle center-block d-block mx-auto" alt="圓形">
+                        <div class="caption"> 
+                        <h1 class="text-center" style="margin-top: 10px;">加菲貓</h1>
+                        
+                        <a class="btn btn-default" href="https://zh.wikipedia.org/wiki/%E5%8A%A0%E8%8F%B2%E7%8C%AB" role="button" style="margin-top: 10px;">了解更多</a>
+                        </div> 
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+     <div class="clear"></div>     
+        
+    
+    
+        <footer class="navbar-static-bottom" style="margin-top: 50px;">
+            <div class="contact" >
+               <p style="margin-top: 10px;">聯絡我們</p>
+               </br>
+               <p style="font-family:Comic Sans MS, Comic Sans, cursive;">mail：a1063301@mail.nuk.edu.tw</p>
+               </br>
+               <p style="font-family:Comic Sans MS, Comic Sans, cursive;">mail：a1063307@mail.nuk.edu.tw</p>
+            </div>
+            <div class="clear"></div>     
+
+         </footer>
+   
+</body>
+</html>
